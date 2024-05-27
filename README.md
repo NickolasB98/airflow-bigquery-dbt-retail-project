@@ -70,7 +70,7 @@ https://www.kaggle.com/datasets/tunguz/online-retail
         "auth_provider_x509_cert_url": " ",
         "client_x509_cert_url": " ",
         "universe_domain": " "
-    }service_accountservice_account
+    }
     ```
     
     - [ ]  Airflow → Admin → Connections
