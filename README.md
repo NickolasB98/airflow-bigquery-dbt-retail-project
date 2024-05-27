@@ -162,9 +162,11 @@ retail()
         ```
         
     - [ ]  Create a `configuration.yml`
+     
+          -- include/soda/configuration.yml
+
         
         ```yaml
-        -- include/soda/configuration.yml
         data_source retail:
           type: bigquery
           connection:
