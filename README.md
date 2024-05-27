@@ -1050,34 +1050,48 @@ services:
 ### Open localost:3000, access with your credentials, you are ready to create visualizations in your dashboard!
 
 Firstly, make sure to have the dbt dependencies installed:
+
 Inside your dbt venv, run cd usr/local/airflow/include/dbt
+
 Once you are in this path, run:
+
     dbt deps
+    
     dbt run --select path:models/report --profiles dir /usr/local/airflow/include/dbt
 
 **Now you are ready for the visualizations, utilizing your final Reports.**
 
 
 Connect to your BigQuery instance, by adding DW to your Display Name, your Project ID, and attaching your service account key json file.
+
 Connect to the database.
 
 **1/ Report Product Invoices:**
+
         Create a Pie Chart
+        
         Dimension: Stock Code
+        
         Measure: Total Quantity Sold
 
     Save as: Top 10 Products By Quantity Sold
 
 **2/ Report Year Invoices:**
+
         Create a Line Chart
+        
         X-axis: Month
+        
         Y-axis: Total Revenue
 
     Save as: Total Revenue Per Month
 
 **3/ Report Product Invoices:**
+
         Create a Map
+        
         Metric Field: Total Revenue
+        
         Region Field: Iso
 
     Save as: Primary Markets
