@@ -108,7 +108,7 @@ def retail():
         task_id='upload_csv_to_gcs',
         src='include/dataset/online_retail.csv',
         dst='raw/online_retail.csv',
-        bucket='marclamberti_online_retail',
+        bucket='nikolaos_online_retail',
         gcp_conn_id='gcp',
         mime_type='text/csv',
     )
@@ -146,7 +146,7 @@ retail()
     gcs_to_raw = aql.load_file(
             task_id='gcs_to_raw',
             input_file=File(
-                'gs://marclamberti_online_retail/raw/online_retail.csv',
+                'gs://nikolaos_online_retail/raw/online_retail.csv',
                 conn_id='gcp',
                 filetype=FileType.CSV,
             ),
@@ -183,7 +183,7 @@ retail()
             - https://www.googleapis.com/auth/bigquery
             - https://www.googleapis.com/auth/cloud-platform
             - https://www.googleapis.com/auth/drive
-            project_id: 'airtube-390719'
+            project_id: ' '
             dataset: retail
         ```
         
@@ -201,12 +201,12 @@ retail()
             - https://www.googleapis.com/auth/bigquery
             - https://www.googleapis.com/auth/cloud-platform
             - https://www.googleapis.com/auth/drive
-            project_id: 'airtube-390719'
+            project_id: ' '
             dataset: retail
         soda_cloud:
           host: cloud.soda.io
-          api_key_id: ec1bd081-1cfc-4037-93cc-d2ba94de930c
-          api_key_secret: CcCCtCBhMIdju4VLKovy6Tha8by7sm7AD4woIW5tlwJvI57Dt0H1sQ
+          api_key_id: 
+          api_key_secret: 
         ```
         
     - [ ]  Test the connection
@@ -311,8 +311,8 @@ retail()
             ```jsx
             // REMOVE apache-airflow-providers-google==10.3.0
             // REMOVE soda-core-bigquery==3.0.45
-            astronomer-cosmos[dbt-bigquery]==1.0.3 // install google + cosmos + dbt
-            protobuf==3.20.0
+            astronomer-cosmos[dbt-bigquery] // install google + cosmos + dbt
+            protobuf
             ```
             
         - [ ]  In env (required because of conflicts)
@@ -326,7 +326,7 @@ retail()
             ```docker
             # install dbt into a virtual environment
             RUN python -m venv dbt_venv && source dbt_venv/bin/activate && \
-                pip install --no-cache-dir dbt-bigquery==1.5.3 && deactivate
+                pip install --no-cache-dir dbt-bigquery && deactivate
             ```
             
         - [ ]  Restart
@@ -366,7 +366,7 @@ retail()
             type: bigquery
             method: service-account
             keyfile: /usr/local/airflow/include/gcp/service_account.json
-            project: airtube-390719
+            project: 
             dataset: retail
             threads: 1
             timeout_seconds: 300
