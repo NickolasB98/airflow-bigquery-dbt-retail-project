@@ -1074,7 +1074,7 @@ Connect to the database.
         
         Measure: Total Quantity Sold
 
-    Save as: Top 10 Products By Quantity Sold
+    Save as: Top 10 Products by Quantity Sold
 
 **2/ Report Year Invoices:**
 
