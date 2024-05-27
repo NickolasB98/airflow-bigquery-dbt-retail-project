@@ -1,6 +1,6 @@
 
 
-# [PUBLIC] Retail Project
+# Airflow-DBT-BigQuery-Metabase Retail Project
 
 # Dataset
 
@@ -1020,7 +1020,7 @@ soda scan -d retail -c include/soda/configuration.yml include/soda/checks/report
 🥇 The Data Pipeline is Finished
 
 # Dashboard
-
+```json
 docker-compose.override.yml
 version: "3.1"
 services:
@@ -1033,6 +1033,10 @@ services:
     ports:
       - 3000:3000
     restart: always
+```
+
+
+
 
 
 <img width="1426" alt="Visualization Dashboard" src="https://github.com/NickolasB98/airflow-project/assets/157819544/cafc46e2-c426-4155-9223-dfdb7c82e44d">
