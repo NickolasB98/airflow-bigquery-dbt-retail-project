@@ -26,6 +26,10 @@ https://www.kaggle.com/datasets/tunguz/online-retail
 
 <img width="703" alt="image" src="https://github.com/NickolasB98/airflow-project/assets/157819544/db5f301d-f567-4b61-840e-e24b298408fa">
 
+# Final Pipeline
+
+<img width="1426" alt="Visualization Dashboard" src="https://github.com/NickolasB98/airflow-bigquery-dbt-retail-data-pipeline/assets/157819544/304353d6-bfc2-415c-a6b6-7a856e8554f9">
+
 
 # Pipeline
 
