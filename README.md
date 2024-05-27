@@ -632,11 +632,11 @@ retail()
         
         sources:
           - name: retail
-            database: airtube-390719 # Put the project id!
+            database: airtube-id # Put the project id
         
             tables:
               - name: raw_invoices
-        			- name: country
+                - name: country
         ```
         
         In `models/transform`
@@ -1020,8 +1020,10 @@ soda scan -d retail -c include/soda/configuration.yml include/soda/checks/report
 🥇 The Data Pipeline is Finished
 
 # Dashboard
+create file in the main project folder:
+**docker-compose.override.yml**
+
 ```json
-docker-compose.override.yml
 version: "3.1"
 services:
   metabase:
@@ -1035,6 +1037,7 @@ services:
     restart: always
 ```
 
+### Open localost:3000, access with your credentials, you are ready to create visualizations in your dashboard!
 
 
 
