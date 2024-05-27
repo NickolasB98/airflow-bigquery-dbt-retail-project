@@ -54,9 +54,12 @@ https://www.kaggle.com/datasets/tunguz/online-retail
     - [ ]  Grant admin access to GCS + BigQuery
     - [ ]  Click on the service account → Keys → Add Key → Copy the JSON content
     - [ ]  Create a new file `service_account.json` in `include/gcp/`
+
+
+     **include/gcp/service_account.json**
+
     
     ```json
-    # include/gcp/service_account.json
     
     {
         "type": "service_account",
@@ -81,7 +84,8 @@ https://www.kaggle.com/datasets/tunguz/online-retail
 - [ ]  Create the DAG
 
 ```python
-# retail.py
+
+#retail.py
 
 from airflow.decorators import dag, task
 from datetime import datetime
