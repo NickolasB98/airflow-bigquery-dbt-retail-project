@@ -1,0 +1,14 @@
+# profiles.yml
+
+retail:
+ target: dev
+ outputs:
+  dev:
+    type: bigquery
+    method: service-account
+    keyfile: 
+    project: 
+    dataset: retail
+    threads: 1
+    timeout_seconds: 300
+    location: US

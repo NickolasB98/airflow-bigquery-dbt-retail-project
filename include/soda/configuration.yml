@@ -1,0 +1,15 @@
+data_source retail:
+  type: bigquery
+  connection:
+    account_info_json_path: 
+    auth_scopes:
+    - https://www.googleapis.com/auth/bigquery
+    - https://www.googleapis.com/auth/cloud-platform
+    - https://www.googleapis.com/auth/drive
+    project_id: ''
+    dataset: retail
+
+soda_cloud:
+  host: 
+  api_key_id: 
+  api_key_secret: 
