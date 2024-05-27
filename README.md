@@ -19,11 +19,13 @@ https://www.kaggle.com/datasets/tunguz/online-retail
 
 # Pipeline
 
-![Screenshot 2023-07-13 at 16.41.19.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/db94f449-671e-4a37-8cf2-1edc0231c9e3/886dee9a-4801-4054-99a1-b8e24ed018f7/Screenshot_2023-07-13_at_16.41.19.png)
+<img width="729" alt="image" src="https://github.com/NickolasB98/airflow-project/assets/157819544/c46194c6-ec84-4d7a-8b48-246c55c3b902">
+
 
 # Data modeling
 
-![Screenshot 2023-07-13 at 16.59.35.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/db94f449-671e-4a37-8cf2-1edc0231c9e3/b2b83771-d029-4c3f-bd46-a34916b83dd9/Screenshot_2023-07-13_at_16.59.35.png)
+<img width="703" alt="image" src="https://github.com/NickolasB98/airflow-project/assets/157819544/db5f301d-f567-4b61-840e-e24b298408fa">
+
 
 # Pipeline
 
@@ -40,7 +42,7 @@ https://www.kaggle.com/datasets/tunguz/online-retail
 
 **IMPORTANT!**
 
-**Open the Dockerfile and make sure you use [quay.io/astronomer/astro-runtime:8.8.0](https://www.youtube.com/redirect?event=comments&redir_token=QUFFLUhqbmNvZnZoRXA5bXpQOTNXSjJFZ0N4TUNlZTZjQXxBQ3Jtc0ttOUw0YlNjX0w4N2xOSGg1dEF5Tzc3YU9KTm9HalozVmtsUmpmMkd4MnBhSnpkNVRQdGJsZzZpNjlZWHdRNkFKM1BMWl9zTW1TSGNUbGV5QW1zU2UybURaMHN0SUs5cnpGaFVTQkJTdUp5LVNzUWIycw&q=http%3A%2F%2Fquay.io%2Fastronomer%2Fastro-runtime%3A8.8.0&stzid=UgwO3rRwDpXPy4ZgDbt4AaABAg) in the Dockerfile (or airflow 2.6.1), If not, use that version and restart Airflow (astro dev restart with the Astro CLI)**
+**Open the Dockerfile and make sure you use [quay.io/astronomer/astro-runtime:8.8.0] in the Dockerfile (or airflow 2.6.1), If not, use that version and restart Airflow (astro dev restart with the Astro CLI)**
 
 ---
 
@@ -150,7 +152,7 @@ retail()
     ```
     
 
-**🏆 Data loaded into the warehouse!**
+**Data loaded into the warehouse!**
 
 - [ ]  Install Soda Core
     - [ ]  In requirements.txt
@@ -289,7 +291,7 @@ retail()
         ```
         
     
-    **🏆 First data quality check in place!**
+    **First data quality check in place!**
     
     ### Transform
     
@@ -792,7 +794,7 @@ retail()
     
 - [ ]  Go check out the Airflow UI, you should see a TaskGroup transform with the models
 
-**🏆 First dbt models in place!**
+**First dbt models in place!**
 
 - [ ]  In `include/soda/checks/transform`
     
@@ -1015,7 +1017,7 @@ soda scan -d retail -c include/soda/configuration.yml include/soda/checks/report
         return check(scan_name, checks_subpath)
 ```
 
-🥇 Well done! You’ve finished the data pipeline
+🥇 The Data Pipeline is Finished
 
 # Dashboard
 
@@ -1031,3 +1033,8 @@ services:
     ports:
       - 3000:3000
     restart: always
+
+
+<img width="1426" alt="Visualization Dashboard" src="https://github.com/NickolasB98/airflow-project/assets/157819544/cafc46e2-c426-4155-9223-dfdb7c82e44d">
+
+
