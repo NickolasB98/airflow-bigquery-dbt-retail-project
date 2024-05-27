@@ -1029,7 +1029,7 @@ soda scan -d retail -c include/soda/configuration.yml include/soda/checks/report
 create file in the main project folder:
 **docker-compose.override.yml**
 
-```json
+```yaml
 version: "3.1"
 services:
   metabase:
