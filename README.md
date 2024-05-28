@@ -44,7 +44,7 @@ https://www.kaggle.com/datasets/tunguz/online-retail
 
 ---
 
-**IMPORTANT!**
+**Before you start:**
 
 **Open the Dockerfile and make sure you use [quay.io/astronomer/astro-runtime:8.8.0] in the Dockerfile (or airflow 2.6.1), If not, use that version and restart Airflow (astro dev restart with the Astro CLI)**
 
