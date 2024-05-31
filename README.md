@@ -1,6 +1,6 @@
 
 
-# Airflow-DBT-BigQuery-Metabase Retail Project
+# Retail Data Pipeline for Streamlined Analytics and Visualization
 
 # Dataset
 
